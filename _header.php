@@ -41,5 +41,5 @@
         // Bootstrap ID
         gtag('config', 'UA-118965717-5');
     </script>
-    <link href="node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
+    <link href="/node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
 </head>

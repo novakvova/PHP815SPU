@@ -73,19 +73,10 @@
     <div class="c-subheader px-3">
         <!-- Breadcrumb-->
         <ol class="breadcrumb border-0 m-0">
-            <li class="breadcrumb-item">
-                <a href="/index.php">
-                    <?php
-                        if(isset($home))
-                            echo $home;
-                        else
-                            echo "Головна";
-                        ?>
-                </a>
-            </li>
-            <li class="breadcrumb-item"><a href="#">Admin</a></li>
-            <li class="breadcrumb-item active">Dashboard</li>
-            <!-- Breadcrumb Menu-->
+            <?php
+            foreach ($breadcrumbs as $item)
+                $item->show();
+            ?>
         </ol>
     </div>
 </header>

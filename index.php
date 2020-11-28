@@ -1,6 +1,15 @@
 <!DOCTYPE html>
-<?php include_once "_header.php"?>
 
+
+<?php include_once "_header.php"?>
+ <?php
+ include_once "classes.php";
+ //$bItem = new BreadcrumbItem;
+ $breadcrumbs = array();
+ $breadcrumbs[] = new BreadcrumbItem("Головнa", false, "/");
+ $breadcrumbs[] = new BreadcrumbItem("Admin", false, "#");
+ $breadcrumbs[] = new BreadcrumbItem("Dashboard", true);
+ ?>
 
   <body class="c-app">
     <?php include_once "_sidebar.php"; ?>
