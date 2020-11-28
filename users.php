@@ -26,8 +26,8 @@
                                     <?php
                                     include_once "connection_database.php";
                                     $sql = 'SELECT * FROM tbl_users';
-
                                     ?>
+                                    <a href="add_user.php" class="btn btn-success mb-2">Додати</a>
                                     <table class="table table-responsive-sm table-hover table-outline mb-0">
                                         <thead class="thead-light">
                                         <tr>
@@ -48,7 +48,6 @@
                                         foreach ($dbh->query($sql) as $row)
                                         {
                                             echo '
-                                        
                                             <tr>
                                                 <td class="text-center">
                                                     <div class="c-avatar">
